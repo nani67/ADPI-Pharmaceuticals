@@ -36,19 +36,18 @@ export default function Features() {
           <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
             <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-teal-200/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-teal-200/50">
               <span className="inline-flex bg-gradient-to-r from-teal-500 to-teal-200 bg-clip-text text-transparent">
-                Advanced Controls
+                Our Promise
               </span>
             </div>
             <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.teal.200),theme(colors.gray.50),theme(colors.teal.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-              Built for modern product teams
+            Leave no citizen behind in the
+            journey towards a healthier nation.
             </h2>
             <p className="text-lg text-teal-200/65">
-              Open AI reads and understands your files, and with nothing more
-              than a single line of feedback, so you can go further than the
-              speed of thought.
+            We excel in developing, manufacturing and marketing a diverse range of pharmaceutical formulations across various acute and chronic therapeutic areas, as well as several consumer healthcare products.
             </p>
           </div>
-          <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
+          {/* <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
             <Image
               className="max-w-none"
               src={FeaturesImage}
@@ -56,7 +55,7 @@ export default function Features() {
               height={384}
               alt="Features"
             />
-          </div>
+          </div> */}
           {/* Items */}
           <div className="mx-auto grid max-w-sm gap-12 sm:max-w-none sm:grid-cols-2 md:gap-x-14 md:gap-y-16 lg:grid-cols-3">
             <article>
@@ -73,11 +72,10 @@ export default function Features() {
                 />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Project Milestones
+                Quality
               </h3>
               <p className="text-teal-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+              Our non-compromising approach to quality ensures that we are constantly endeavoring to achieve and maintain the highest quality standards in the pharmaceutical industry in India.
               </p>
             </article>
             <article>
@@ -91,11 +89,10 @@ export default function Features() {
                 <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Team Views
+                Affordability
               </h3>
               <p className="text-teal-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+              Staying true to our founding principles of being a price disruptor, we deliver affordable medication that meets the healthcare needs of Bharat.
               </p>
             </article>
             <article>
@@ -112,14 +109,13 @@ export default function Features() {
                 />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Advanced Search
+                Accessibility
               </h3>
               <p className="text-teal-200/65">
-                Track progress across custom flows for your team. Find the right
-                balance for the user, privacy and security.
+              More than 50% of India's total population resides in villages, making access to medicines difficult. Mankind's pioneering use of supply chains and a company-owned distribution setup bolsters accessibility.
               </p>
             </article>
-            <article>
+            {/* <article>
               <svg
                 className="mb-3 fill-teal-500"
                 xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +182,7 @@ export default function Features() {
                 Track progress across custom flows for your team. Find the right
                 balance for the user, privacy and security.
               </p>
-            </article>
+            </article> */}
           </div>
         </div>
       </div>

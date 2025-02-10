@@ -112,8 +112,8 @@ export default function Testimonials() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6">
-      <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,theme(colors.slate.400/.25),transparent)1] md:py-20">
-        {/* Section header */}
+      {/* <div className="border-t py-12 [border-image:linear-gradient(to_right,transparent,theme(colors.slate.400/.25),transparent)1] md:py-20">
+        
         <div className="mx-auto max-w-3xl pb-12 text-center">
           <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.teal.200),theme(colors.gray.50),theme(colors.teal.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
             Don't take our word for it
@@ -125,10 +125,10 @@ export default function Testimonials() {
         </div>
 
         <div>
-          {/* Buttons */}
+          
           <div className="flex justify-center pb-12 max-md:hidden md:pb-16">
             <div className="relative inline-flex flex-wrap justify-center rounded-[1.25rem] bg-gray-800/40 p-1">
-              {/* Button #1 */}
+              
               <button
                 className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring focus-visible:ring-teal-200 ${category === 1 ? "relative bg-gradient-to-b from-gray-900 via-gray-800/60 to-gray-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.teal.500/0),theme(colors.teal.500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]" : "opacity-65 transition-opacity hover:opacity-90"}`}
                 aria-pressed={category === 1}
@@ -144,7 +144,7 @@ export default function Testimonials() {
                 </svg>
                 <span>View All</span>
               </button>
-              {/* Button #2 */}
+              
               <button
                 className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring focus-visible:ring-teal-200 ${category === 2 ? "relative bg-gradient-to-b from-gray-900 via-gray-800/60 to-gray-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.teal.500/0),theme(colors.teal.500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]" : "opacity-65 transition-opacity hover:opacity-90"}`}
                 aria-pressed={category === 2}
@@ -160,7 +160,7 @@ export default function Testimonials() {
                 </svg>
                 <span>Web Apps</span>
               </button>
-              {/* Button #3 */}
+              
               <button
                 className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring focus-visible:ring-teal-200 ${category === 3 ? "relative bg-gradient-to-b from-gray-900 via-gray-800/60 to-gray-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.teal.500/0),theme(colors.teal.500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]" : "opacity-65 transition-opacity hover:opacity-90"}`}
                 aria-pressed={category === 3}
@@ -176,7 +176,7 @@ export default function Testimonials() {
                 </svg>
                 <span>eCommerce</span>
               </button>
-              {/* Button #4 */}
+              
               <button
                 className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring focus-visible:ring-teal-200 ${category === 4 ? "relative bg-gradient-to-b from-gray-900 via-gray-800/60 to-gray-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.teal.500/0),theme(colors.teal.500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]" : "opacity-65 transition-opacity hover:opacity-90"}`}
                 aria-pressed={category === 4}
@@ -192,7 +192,7 @@ export default function Testimonials() {
                 </svg>
                 <span>Enteprise</span>
               </button>
-              {/* Button #5 */}
+              
               <button
                 className={`flex h-8 flex-1 items-center gap-2.5 whitespace-nowrap rounded-full px-3 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring focus-visible:ring-teal-200 ${category === 5 ? "relative bg-gradient-to-b from-gray-900 via-gray-800/60 to-gray-900 before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(to_bottom,theme(colors.teal.500/0),theme(colors.teal.500/.5))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]" : "opacity-65 transition-opacity hover:opacity-90"}`}
                 aria-pressed={category === 5}
@@ -211,7 +211,7 @@ export default function Testimonials() {
             </div>
           </div>
 
-          {/* Cards */}
+          
           <div
             className="mx-auto grid max-w-sm items-start gap-6 sm:max-w-none sm:grid-cols-2 lg:grid-cols-3"
             ref={masonryContainer}
@@ -225,7 +225,7 @@ export default function Testimonials() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

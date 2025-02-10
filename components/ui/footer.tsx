@@ -205,8 +205,8 @@ export default function Footer() {
             </div>
             <div className="text-sm">
               <p className="mb-3 text-teal-200/65">
-                © Cruip.com
-                <span className="text-gray-700"> · </span>
+                © ADPIPharmaceuticals.com
+                <span className="text-gray-700"> </span>
                 <a
                   className="text-teal-200/65 transition hover:text-teal-500"
                   href="#0"
