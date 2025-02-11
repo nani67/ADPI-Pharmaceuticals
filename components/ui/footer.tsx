@@ -26,9 +26,9 @@ export default function Footer() {
             <span className="text-teal-200/65">
             Registered Office<br />
 
-ADPI Pharmaceuticals
-Jageswar Dham, Bithoor Road, Kanpur
-Tel: +91 78278605016, 9451801066
+ADPI Pharmaceuticals<br />
+Jageswar Dham, Bithoor Road, Kanpur <br />
+Tel: +91 78278605016, 9451801066<br />
 Email: adpillp086@gmail.com
 </span>
             
@@ -273,7 +273,7 @@ Email: adpillp086@gmail.com
             </div>
           </div>
         </div>
-        <div className="pb-4">Copyright to ADPI Pharmaceuticals</div>
+        <div className="pb-4">© Copyright to ADPI Pharmaceuticals</div>
       </div>
 
 

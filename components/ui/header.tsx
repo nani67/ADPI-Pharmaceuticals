@@ -165,7 +165,7 @@ export default function Header() {
                 >
                   <div className="font-semibold">Neuro</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Connect with third-party tools that you're already using.
+                    Wide range of Anticonvulsants, Neuropainkillers, Sedatives, Tranquilisers.
                   </span>
                 </Link>
               </li>
@@ -176,7 +176,7 @@ export default function Header() {
                 >
                   <div className="font-semibold">Psychiatry</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Segment customers based on data.
+                    Wide range of high-quality anti-depresssents, antipsychotics, anxiolytics.
                   </span>
                 </Link>
               </li>
@@ -188,7 +188,7 @@ export default function Header() {
                 >
                   <div className="font-semibold">Nutraceutical</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Automate and personalize outreach.
+                    Products such as DailyTab, Sports+, TigerVit
                   </span>
                 </Link>
               </li>
@@ -201,7 +201,7 @@ export default function Header() {
                 >
                   <div className="font-semibold">Cardiac</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Automate and personalize outreach.
+                    High-quality cardiac formulations like Beta-Blockers, Statins, Ace-inhibitors.
                   </span>
                 </Link>
               </li>
@@ -212,7 +212,7 @@ export default function Header() {
                 >
                   <div className="font-semibold">Diabetic</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Automate and personalize outreach.
+                    Obtained latest approvals for Diabetic drugs
                   </span>
                 </Link>
               </li>
@@ -224,7 +224,7 @@ export default function Header() {
                 >
                   <div className="font-semibold">General</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Automate and personalize outreach.
+                    300+ approvals for COPPs for Painkillers, Analgesics, Anticold, Antimalarial and general
                   </span>
                 </Link>
               </li>
@@ -252,7 +252,7 @@ export default function Header() {
                 >
                   <div className="font-semibold">Overview</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Connect with third-Nani tools that you're already using.
+                    Company's Overview
                   </span>
                 </Link>
               </li>
@@ -263,7 +263,7 @@ export default function Header() {
                 >
                   <div className="font-semibold">Board of Directors</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Segment customers based on Nani.
+                    People who made the company possible
                   </span>
                 </Link>
               </li>
@@ -276,7 +276,7 @@ export default function Header() {
                 >
                   <div className="font-semibold">MD's Message</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Automate and personalize Nani.
+                    An inspiring message from our MD
                   </span>
                 </Link>
               </li><li>
@@ -286,7 +286,7 @@ export default function Header() {
                 >
                   <div className="font-semibold">Social Responsibility</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Automate and personalize Nani.
+                    How we contribute to the society
                   </span>
                 </Link>
               </li>
