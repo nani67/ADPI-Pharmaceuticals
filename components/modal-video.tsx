@@ -88,8 +88,8 @@ export default function ModalVideo({
                   y2={20}
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stopColor="#6366F1" />
-                  <stop offset={1} stopColor="#6366F1" stopOpacity=".72" />
+                  <stop stopColor="teal" />
+                  <stop offset={1} stopColor="teal" stopOpacity=".72" />
                 </linearGradient>
               </defs>
             </svg>

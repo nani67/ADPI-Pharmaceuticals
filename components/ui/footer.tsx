@@ -19,11 +19,20 @@ export default function Footer() {
             alt="Footer illustration"
           />
         </div>
-        <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-4 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(4,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">
+        <div className="grid grid-cols-2 justify-between gap-12 py-8 sm:grid-rows-[auto_auto] md:grid-cols-2 md:grid-rows-[auto_auto] md:py-12 lg:grid-cols-[repeat(2,minmax(0,140px))_1fr] lg:grid-rows-1 xl:gap-20">
           {/* 1st block */}
-          <div className="space-y-2">
-            <h3 className="text-sm font-medium text-gray-200">Product</h3>
-            <ul className="space-y-2 text-sm">
+          <div className="space-y-2 col-span-2">
+            <h3 className="text-sm font-medium text-gray-200">Contact Information</h3>
+            <span className="text-teal-200/65">
+            Registered Office<br />
+
+ADPI Pharmaceuticals
+Jageswar Dham, Bithoor Road, Kanpur
+Tel: +91 78278605016, 9451801066
+Email: adpillp086@gmail.com
+</span>
+            
+            {/* <ul className="space-y-2 text-sm">
               <li>
                 <a
                   className="text-teal-200/65 transition hover:text-teal-500"
@@ -72,10 +81,10 @@ export default function Footer() {
                   User policy
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
           {/* 2nd block */}
-          <div className="space-y-2">
+          {/* <div className="space-y-2">
             <h3 className="text-sm font-medium text-gray-200">Company</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -119,9 +128,9 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           {/* 3rd block */}
-          <div className="space-y-2">
+          {/* <div className="space-y-2">
             <h3 className="text-sm font-medium text-gray-200">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
@@ -149,9 +158,9 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           {/* 4th block */}
-          <div className="space-y-2">
+          {/* <div className="space-y-2">
             <h3 className="text-sm font-medium text-gray-200">
               Content Library
             </h3>
@@ -197,7 +206,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
           {/* 5th block */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1 lg:text-right">
             <div className="mb-3">
@@ -206,7 +215,7 @@ export default function Footer() {
             <div className="text-sm">
               <p className="mb-3 text-teal-200/65">
                 © ADPIPharmaceuticals.com
-                <span className="text-gray-700"> </span>
+                <span className="text-gray-700"> . </span>
                 <a
                   className="text-teal-200/65 transition hover:text-teal-500"
                   href="#0"
@@ -264,7 +273,10 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <div className="pb-4">Copyright to ADPI Pharmaceuticals</div>
       </div>
+
+
     </footer>
   );
 }

@@ -57,7 +57,8 @@ export default function Header() {
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <button onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}
+              <button 
+                onClick={() => {setIsDropdownOpen2(false); setIsDropdownOpen(!isDropdownOpen)}}
                 className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
                 aria-current="page"
               >
@@ -81,7 +82,7 @@ export default function Header() {
             </li>
             <li>
               <button
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                onClick={() => {setIsDropdownOpen(false); setIsDropdownOpen2(!isDropdownOpen2)}}
                 className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
               >
                 Products
@@ -147,16 +148,22 @@ export default function Header() {
       </div>
 
       {/* Dropdown */}
-      {isDropdownOpen && (
-        <div className="mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
-          <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+      {isDropdownOpen2 && (
+        <div
+        className={`mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600 
+                    transition-opacity duration-300 ease-in-out opacity-0 ${
+                      isDropdownOpen2 ? "opacity-100 visible" : "invisible"
+                    }`}
+        data-aos="fade-up"
+      >
+      <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
             <ul>
               <li>
                 <Link
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Product 1</div>
+                  <div className="font-semibold">Neuro</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Connect with third-party tools that you're already using.
                   </span>
@@ -167,9 +174,21 @@ export default function Header() {
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Product 2</div>
+                  <div className="font-semibold">Psychiatry</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Segment customers based on data.
+                  </span>
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="#"
+                  className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="font-semibold">Nutraceutical</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                    Automate and personalize outreach.
                   </span>
                 </Link>
               </li>
@@ -180,7 +199,7 @@ export default function Header() {
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Product 3</div>
+                  <div className="font-semibold">Cardiac</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Automate and personalize outreach.
                   </span>
@@ -191,7 +210,19 @@ export default function Header() {
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Product 4</div>
+                  <div className="font-semibold">Diabetic</div>
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                    Automate and personalize outreach.
+                  </span>
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="#"
+                  className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                >
+                  <div className="font-semibold">General</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Automate and personalize outreach.
                   </span>
@@ -204,9 +235,15 @@ export default function Header() {
 
 
 
-{isDropdownOpen2 && (
-        <div className="mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
-          <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+{isDropdownOpen && (
+       <div
+       className={`mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600 
+                   transition-opacity duration-300 ease-in-out opacity-0 ${
+                     isDropdownOpen ? "opacity-100 visible" : "invisible"
+                   }`}
+       data-aos="fade-up"
+     >
+     <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
             <ul>
               <li>
                 <Link

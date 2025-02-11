@@ -36,16 +36,15 @@ export default function Features() {
           <div className="mx-auto max-w-3xl pb-4 text-center md:pb-12">
             <div className="inline-flex items-center gap-3 pb-3 before:h-px before:w-8 before:bg-gradient-to-r before:from-transparent before:to-teal-200/50 after:h-px after:w-8 after:bg-gradient-to-l after:from-transparent after:to-teal-200/50">
               <span className="inline-flex bg-gradient-to-r from-teal-500 to-teal-200 bg-clip-text text-transparent">
-                Our Promise
+                Why Choose us
               </span>
             </div>
-            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.teal.200),theme(colors.gray.50),theme(colors.teal.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-3xl font-semibold text-transparent md:text-4xl">
-            Leave no citizen behind in the
-            journey towards a healthier nation.
+            <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.teal.200),theme(colors.gray.50),theme(colors.teal.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-2xl font-semibold text-transparent md:text-2xl">
+            We excel in developing, manufacturing and marketing a diverse range of pharmaceutical formulations as well as several consumer healthcare products.
             </h2>
-            <p className="text-lg text-teal-200/65">
-            We excel in developing, manufacturing and marketing a diverse range of pharmaceutical formulations across various acute and chronic therapeutic areas, as well as several consumer healthcare products.
-            </p>
+            {/* <p className="text-lg text-teal-200/65">
+            
+            </p> */}
           </div>
           {/* <div className="flex justify-center pb-4 md:pb-12" data-aos="fade-up">
             <Image
@@ -72,7 +71,7 @@ export default function Features() {
                 />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Quality
+                Highest Quality Standards
               </h3>
               <p className="text-teal-200/65">
               Our non-compromising approach to quality ensures that we are constantly endeavoring to achieve and maintain the highest quality standards in the pharmaceutical industry in India.
@@ -89,7 +88,7 @@ export default function Features() {
                 <path d="M19 6H0v2h17v8H7v-6H5v8h19v-2h-5V6Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Affordability
+                Innovative Research & Development
               </h3>
               <p className="text-teal-200/65">
               Staying true to our founding principles of being a price disruptor, we deliver affordable medication that meets the healthcare needs of Bharat.
@@ -109,13 +108,13 @@ export default function Features() {
                 />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Accessibility
+                Patient Centered commitment
               </h3>
               <p className="text-teal-200/65">
               More than 50% of India's total population resides in villages, making access to medicines difficult. Mankind's pioneering use of supply chains and a company-owned distribution setup bolsters accessibility.
               </p>
             </article>
-            {/* <article>
+            <article>
               <svg
                 className="mb-3 fill-teal-500"
                 xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +133,7 @@ export default function Features() {
                 <path d="m16.321 2-.5-.866 1.733-1 .5.866A22 22 0 0 1 21 12c0 3.852-1.017 7.636-2.948 10.97l-.502.865-1.73-1.003.501-.865A19.878 19.878 0 0 0 19 12a20 20 0 0 0-2.679-10Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Strategic Initiatives
+                Global Expertise with Local Impact
               </h3>
               <p className="text-teal-200/65">
                 Track progress across custom flows for your team. Find the right
@@ -155,7 +154,7 @@ export default function Features() {
                 <path d="m7.454 2.891.891-.454L7.437.655l-.891.454a12 12 0 0 0 0 21.382l.89.454.91-1.781-.892-.455a10 10 0 0 1 0-17.818ZM17.456 1.11l-.891-.454-.909 1.782.891.454a10 10 0 0 1 0 17.819l-.89.454.908 1.781.89-.454a12 12 0 0 0 0-21.382Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Flexible Workflows
+                Sustainable and Ethical Practises
               </h3>
               <p className="text-teal-200/65">
                 Track progress across custom flows for your team. Find the right
@@ -176,13 +175,113 @@ export default function Features() {
                 <path d="M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z" />
               </svg>
               <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
-                Unified Timeline
+                Comprehensive Therepautic range
               </h3>
               <p className="text-teal-200/65">
                 Track progress across custom flows for your team. Find the right
                 balance for the user, privacy and security.
               </p>
-            </article> */}
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <article>
+              <svg
+                className="mb-3 fill-teal-500"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+              >
+                <path
+                  fillOpacity=".48"
+                  d="M19 8h5v2h-5V8Zm-4 5h9v2h-9v-2Zm9 5H11v2h13v-2Z"
+                />
+                <path d="M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z" />
+              </svg>
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+                Proven Success & Trust
+              </h3>
+              <p className="text-teal-200/65">
+                Track progress across custom flows for your team. Find the right
+                balance for the user, privacy and security.
+              </p>
+            </article>
+            <article>
+              <svg
+                className="mb-3 fill-teal-500"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+              >
+                <path
+                  fillOpacity=".48"
+                  d="M19 8h5v2h-5V8Zm-4 5h9v2h-9v-2Zm9 5H11v2h13v-2Z"
+                />
+                <path d="M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z" />
+              </svg>
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+                Exceptional Customer Service
+              </h3>
+              <p className="text-teal-200/65">
+                Track progress across custom flows for your team. Find the right
+                balance for the user, privacy and security.
+              </p>
+            </article>
+            <article>
+              <svg
+                className="mb-3 fill-teal-500"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+              >
+                <path
+                  fillOpacity=".48"
+                  d="M19 8h5v2h-5V8Zm-4 5h9v2h-9v-2Zm9 5H11v2h13v-2Z"
+                />
+                <path d="M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z" />
+              </svg>
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+                Regulatory Compliance
+              </h3>
+              <p className="text-teal-200/65">
+                Track progress across custom flows for your team. Find the right
+                balance for the user, privacy and security.
+              </p>
+            </article>
+            <article>
+              <svg
+                className="mb-3 fill-teal-500"
+                xmlns="http://www.w3.org/2000/svg"
+                width={24}
+                height={24}
+              >
+                <path
+                  fillOpacity=".48"
+                  d="M19 8h5v2h-5V8Zm-4 5h9v2h-9v-2Zm9 5H11v2h13v-2Z"
+                />
+                <path d="M19.406 3.844 6.083 20.497.586 15 2 13.586l3.917 3.917L17.844 2.595l1.562 1.25Z" />
+              </svg>
+              <h3 className="mb-1 font-nacelle text-[1rem] font-semibold text-gray-200">
+                Global Distribution Network
+              </h3>
+              <p className="text-teal-200/65">
+                Track progress across custom flows for your team. Find the right
+                balance for the user, privacy and security.
+              </p>
+            </article>
           </div>
         </div>
       </div>
