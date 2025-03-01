@@ -20,6 +20,7 @@ export default function DefaultLayout({
       easing: "ease-out-sine",
     });
   });
+  
 
   return (
     <>
@@ -29,3 +30,4 @@ export default function DefaultLayout({
     </>
   );
 }
+

@@ -3,18 +3,25 @@
 import { useState } from "react";
 import Link from "next/link";
 import Logo from "./logo";
+import {medicineListener} from '@/app/(default)/page';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
 
+  let medicinesOnes = () => {
+    console.log("this?");
+    medicineListener();
+  }
+
   return (
     <nav className="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         {/* Branding */}
         <Link
-          href="https://flowbite.com"
+        href="#"
+          onClick={() => medicinesOnes()}
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <Logo />
@@ -160,16 +167,17 @@ export default function Header() {
             <ul>
               <li>
                 <Link
-                  href="#"
+                href="#"
+                  onClick={() => medicinesOnes()}
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Neuro</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                  <div className="font-semibold">General</div>
+                  {/* <span className="text-sm text-gray-500 dark:text-gray-400">
                     Wide range of Anticonvulsants, Neuropainkillers, Sedatives, Tranquilisers.
-                  </span>
+                  </span> */}
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -179,9 +187,9 @@ export default function Header() {
                     Wide range of high-quality anti-depresssents, antipsychotics, anxiolytics.
                   </span>
                 </Link>
-              </li>
+              </li> */}
 
-              <li>
+              {/* <li>
                 <Link
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
@@ -191,9 +199,9 @@ export default function Header() {
                     Products such as DailyTab, Sports+, TigerVit
                   </span>
                 </Link>
-              </li>
+              </li> */}
             </ul>
-            <ul>
+            {/* <ul>
               <li>
                 <Link
                   href="#"
@@ -228,7 +236,7 @@ export default function Header() {
                   </span>
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       )}
