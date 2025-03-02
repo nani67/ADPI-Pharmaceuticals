@@ -3,17 +3,17 @@
 import { useState } from "react";
 import Link from "next/link";
 import Logo from "./logo";
-import {medicineListener} from '@/app/(default)/page';
+import medicineListener from '@/app/(default)/page';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
 
-  let medicinesOnes = () => {
-    console.log("this?");
-    medicineListener();
-  }
+  // let medicinesOnes = () => {
+  //   console.log("this?");
+  //   medicineListener();
+  // }
 
   return (
     <nav className="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
@@ -21,7 +21,6 @@ export default function Header() {
         {/* Branding */}
         <Link
         href="#"
-          onClick={() => medicinesOnes()}
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <Logo />
@@ -167,11 +166,10 @@ export default function Header() {
             <ul>
               <li>
                 <Link
-                href="#"
-                  onClick={() => medicinesOnes()}
+                href="#medicines"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">General</div>
+                  <div className="font-semibold">Generic Medicines</div>
                   {/* <span className="text-sm text-gray-500 dark:text-gray-400">
                     Wide range of Anticonvulsants, Neuropainkillers, Sedatives, Tranquilisers.
                   </span> */}
