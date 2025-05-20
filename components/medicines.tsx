@@ -97,7 +97,7 @@ export default function Medicines() {
               className="mb-8 animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.teal.200),theme(colors.gray.50),theme(colors.teal.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-5 font-nacelle text-4xl font-semibold text-transparent md:text-5xl"
               data-aos="fade-up" id="medicines"
             >
-              Generic Medicines
+              Medicines
             </h1>
 
                 <div className="pb-12 md:pb-20">
