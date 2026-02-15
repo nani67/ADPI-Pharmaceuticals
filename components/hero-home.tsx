@@ -83,7 +83,7 @@ export default function HeroHome() {
                 <b>ADPI Pharmaceuticals</b>, dream of two friends to manufacture the highest quality, with economical price and the formulation that surpasses international standards and make them available at practical and affordable prices to needy people.
 
                 <br /><br />
-                Under guidance of our founders Priya Kumari & Aditi Chaturvedi was branded as ADPI Pharmaceuticals on 2024.
+                Under guidance of our founders Priya Kumari, Aditi Chaturvedi & Rakhi Kumari was branded as ADPI Pharmaceuticals on 2024.
                 <br />
                 We service more than 100+ hospitals in Uttar Pradesh and Bihar.
               </p>
