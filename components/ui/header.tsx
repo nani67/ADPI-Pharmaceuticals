@@ -265,6 +265,9 @@ export default function Header() {
               <li>
                 <Link
                   href="/board-of-directors"
+                  onClick={()=> setTimeout(() => {
+                    setIsDropdownOpen(false)
+                  }, 100)}
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
                   <div className="font-semibold">Board of Directors</div>
