@@ -264,7 +264,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/board-of-directors"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
                   <div className="font-semibold">Board of Directors</div>
