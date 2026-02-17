@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Logo from "./logo";
-import medicineListener from '@/app/(default)/page';
+import medicineListener from "@/app/(default)/page";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +20,14 @@ export default function Header() {
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
         {/* Branding */}
         <Link
-        href="#"
+          href="/"
+          onClick={() => {
+            setTimeout(() => {
+              setIsMenuOpen(false);
+              setIsDropdownOpen(false);
+              setIsDropdownOpen2(false);
+            }, 100);
+          }}
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <Logo />
@@ -63,90 +70,115 @@ export default function Header() {
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <button 
-                onClick={() => {setIsDropdownOpen2(false); setIsDropdownOpen(!isDropdownOpen)}}
-                className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
-                aria-current="page"
+              <Link
+                href="/"
+                onClick={() => {
+                  setTimeout(() => {
+                    setIsMenuOpen(false);
+                    setIsDropdownOpen(false);
+                    setIsDropdownOpen2(false);
+                  }, 100);
+                }}
+                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
               >
-                About us
+                Home
+              </Link>
+            </li>
+            <li>
+              <button
+                onClick={() => {
+                  setIsDropdownOpen2(false);
+                  setIsDropdownOpen(!isDropdownOpen);
+                }}
+                className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
+              >
+                About Us
                 <svg
                   className="w-2.5 h-2.5 ml-2.5"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 10 6"
-                  aria-hidden="true"
                 >
                   <path
-                    d="M1 1l4 4 4-4"
                     stroke="currentColor"
-                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="m1 1 4 4 4-4"
                   />
                 </svg>
               </button>
             </li>
             <li>
               <button
-                onClick={() => {setIsDropdownOpen(false); setIsDropdownOpen2(!isDropdownOpen2)}}
+                onClick={() => {
+                  setIsDropdownOpen(false);
+                  setIsDropdownOpen2(!isDropdownOpen2);
+                }}
                 className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
               >
                 Products
                 <svg
                   className="w-2.5 h-2.5 ml-2.5"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 10 6"
-                  aria-hidden="true"
                 >
                   <path
-                    d="M1 1l4 4 4-4"
                     stroke="currentColor"
-                    strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="m1 1 4 4 4-4"
                   />
                 </svg>
               </button>
             </li>
             <li>
               <Link
-                href="#"
+                href="/manufacturing"
+                onClick={() => {
+                  setTimeout(() => {
+                    setIsMenuOpen(false);
+                    setIsDropdownOpen(false);
+                    setIsDropdownOpen2(false);
+                  }, 100);
+                }}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
               >
-                Infrastructure
+                Manufacturing
               </Link>
             </li>
             <li>
               <Link
-                href="#"
+                href="/careers"
+                onClick={() => {
+                  setTimeout(() => {
+                    setIsMenuOpen(false);
+                    setIsDropdownOpen(false);
+                    setIsDropdownOpen2(false);
+                  }, 100);
+                }}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
               >
-                Awards
+                Associate With Us
               </Link>
             </li>
             <li>
               <Link
-                href="#"
+                href="/contact"
+                onClick={() => {
+                  setTimeout(() => {
+                    setIsMenuOpen(false);
+                    setIsDropdownOpen(false);
+                    setIsDropdownOpen2(false);
+                  }, 100);
+                }}
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
               >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
-              >
-                Business
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent"
-              >
-                Contact us
+                Contact Us
               </Link>
             </li>
           </ul>
@@ -156,17 +188,24 @@ export default function Header() {
       {/* Dropdown */}
       {isDropdownOpen2 && (
         <div
-        className={`mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600 
+          className={`mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600 
                     transition-opacity duration-300 ease-in-out opacity-0 ${
                       isDropdownOpen2 ? "opacity-100 visible" : "invisible"
                     }`}
-        data-aos="fade-up"
-      >
-      <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+          data-aos="fade-up"
+        >
+          <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
             <ul>
               <li>
                 <Link
-                href="#medicines"
+                  href="/products"
+                  onClick={() =>
+                    setTimeout(() => {
+                      setIsDropdownOpen(false);
+                      setIsMenuOpen(false);
+                      setIsDropdownOpen2(false);
+                    }, 100)
+                  }
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
                   <div className="font-semibold">Generic Medicines</div>
@@ -239,63 +278,46 @@ export default function Header() {
         </div>
       )}
 
-
-
-{isDropdownOpen && (
-       <div
-       className={`mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600 
+      {isDropdownOpen && (
+        <div
+          className={`mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600 
                    transition-opacity duration-300 ease-in-out opacity-0 ${
                      isDropdownOpen ? "opacity-100 visible" : "invisible"
                    }`}
-       data-aos="fade-up"
-     >
-     <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+          data-aos="fade-up"
+        >
+          <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6 items-center">
             <ul>
               <li>
                 <Link
-                  href="#"
+                  href="/who-we-are"
+                  onClick={() =>
+                    setTimeout(() => {
+                      setIsDropdownOpen(false);
+                      setIsMenuOpen(false);
+                    }, 100)
+                  }
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Overview</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
-                    Company's Overview
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/board-of-directors"
-                  onClick={()=> setTimeout(() => {
-                    setIsDropdownOpen(false)
-                  }, 100)}
-                  className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
-                >
-                  <div className="font-semibold">Board of Directors</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
-                    People who made the company possible
-                  </span>
+                  <div className="font-semibold">Who We Are</div>
                 </Link>
               </li>
             </ul>
             <ul>
               <li>
                 <Link
-                  href="#"
+                  href="/board-of-directors"
+                  onClick={() =>
+                    setTimeout(() => {
+                      setIsDropdownOpen(false);
+                      setIsMenuOpen(false);
+                    }, 100)
+                  }
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">MD's Message</div>
+                  <div className="font-semibold">Board of Directors</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
-                    An inspiring message from our MD
-                  </span>
-                </Link>
-              </li><li>
-                <Link
-                  href="#"
-                  className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
-                >
-                  <div className="font-semibold">Social Responsibility</div>
-                  <span className="text-sm text-gray-500 dark:text-gray-400">
-                    How we contribute to the society
+                    People who made the company possible
                   </span>
                 </Link>
               </li>
