@@ -21,12 +21,13 @@ export default function Workflows() {
               Every step for a better solution
             </h2>
             <p className="text-lg text-teal-200/65">
-              We have developed new solutions to the problems which were prevailing in the Medical Health sector.
-              Affordability and availability are our motto.
+              We have developed new solutions to the problems which were
+              prevailing in the Medical Health sector. Affordability and
+              availability are our motto.
             </p>
           </div>
           {/* Spotlight items */}
-          <Spotlight className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-4">
+          <Spotlight className="group mx-auto grid max-w-sm items-start gap-6 sm:max-w-none sm:grid-cols-2 lg:grid-cols-3 lg:grid-cols-4">
             {/* Card 1 */}
             <a
               className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-teal-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-teal-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
@@ -67,9 +68,7 @@ export default function Workflows() {
                       </span>
                     </span>
                   </div>
-                  <p className="text-teal-200/65 text-2xl">
-                    10+ years
-                  </p>
+                  <p className="text-teal-200/65 text-2xl">10+ years</p>
                 </div>
               </div>
             </a>
@@ -113,9 +112,7 @@ export default function Workflows() {
                       </span>
                     </span>
                   </div>
-                  <p className="text-teal-200/65 text-2xl">
-                    125+
-                  </p>
+                  <p className="text-teal-200/65 text-2xl">125+</p>
                 </div>
               </div>
             </a>
@@ -159,17 +156,15 @@ export default function Workflows() {
                       </span>
                     </span>
                   </div>
-                  <p className="text-teal-200/65 text-2xl">
-                    10+
-                  </p>
+                  <p className="text-teal-200/65 text-2xl">10+</p>
                 </div>
               </div>
             </a>
 
-
-
-
-            <a className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-teal-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-teal-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100" href="#0">
+            <a
+              className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x)] before:translate-y-[var(--mouse-y)] before:rounded-full before:bg-teal-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x)] after:translate-y-[var(--mouse-y)] after:rounded-full after:bg-teal-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 after:hover:opacity-20 before:group-hover:opacity-100"
+              href="#0"
+            >
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50">
                 {/* Arrow */}
                 <div
@@ -205,9 +200,7 @@ export default function Workflows() {
                       </span>
                     </span>
                   </div>
-                  <p className="text-teal-200/65 text-2xl">
-                    20+
-                  </p>
+                  <p className="text-teal-200/65 text-2xl">20+</p>
                 </div>
               </div>
             </a>
