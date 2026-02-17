@@ -4,13 +4,13 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
 import Header from "@/components/ui/header";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
-
 
 const nacelle = localFont({
   src: [
@@ -49,18 +49,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
-   
   return (
     <html lang="en">
       {/* bg-gray-900 */}
       <body
-        style={{backgroundColor: "#058789"}}
+        style={{ backgroundColor: "#058789" }}
         className={`${inter.variable} ${nacelle.variable}  font-inter text-base text-gray-200 antialiased`}
       >
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
           {children}
+          <Toaster richColors />
         </div>
       </body>
     </html>
