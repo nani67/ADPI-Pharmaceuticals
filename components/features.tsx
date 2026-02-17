@@ -40,7 +40,9 @@ export default function Features() {
               </span>
             </div>
             <h2 className="animate-[gradient_6s_linear_infinite] bg-[linear-gradient(to_right,theme(colors.gray.200),theme(colors.teal.200),theme(colors.gray.50),theme(colors.teal.300),theme(colors.gray.200))] bg-[length:200%_auto] bg-clip-text pb-4 font-nacelle text-2xl font-semibold text-transparent md:text-2xl">
-            We excel in developing, manufacturing and marketing a diverse range of pharmaceutical formulations as well as several consumer healthcare products.
+              We excel in developing, manufacturing and marketing a diverse
+              range of pharmaceutical formulations as well as several consumer
+              healthcare products.
             </h2>
             {/* <p className="text-lg text-teal-200/65">
             
@@ -74,7 +76,9 @@ export default function Features() {
                 Highest Quality Standards
               </h3>
               <p className="text-teal-200/65">
-              Our non-compromising approach to quality ensures that we are constantly endeavoring to achieve and maintain the highest quality standards in the pharmaceutical industry in India.
+                Our non-compromising approach to quality ensures that we are
+                constantly endeavoring to achieve and maintain the highest
+                quality standards in the pharmaceutical industry in India.
               </p>
             </article>
             <article>
@@ -91,7 +95,9 @@ export default function Features() {
                 Innovative Research & Development
               </h3>
               <p className="text-teal-200/65">
-              Staying true to our founding principles of being a price disruptor, we deliver affordable medication that meets the healthcare needs of Bharat.
+                Staying true to our founding principles of being a price
+                disruptor, we deliver affordable medication that meets the
+                healthcare needs of Bharat.
               </p>
             </article>
             <article>
@@ -111,7 +117,10 @@ export default function Features() {
                 Patient Centered commitment
               </h3>
               <p className="text-teal-200/65">
-              More than 50% of India's total population resides in villages, making access to medicines difficult. Mankind's pioneering use of supply chains and a company-owned distribution setup bolsters accessibility.
+                More than 50% of India's total population resides in villages,
+                making access to medicines difficult. Mankind's pioneering use
+                of supply chains and a company-owned distribution setup bolsters
+                accessibility.
               </p>
             </article>
             <article>
@@ -182,21 +191,6 @@ export default function Features() {
                 balance for the user, privacy and security.
               </p>
             </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             <article>
               <svg
