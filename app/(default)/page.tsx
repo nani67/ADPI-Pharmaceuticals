@@ -54,6 +54,7 @@ import Testimonials from "@/components/testimonials";
 import Cta from "@/components/cta";
 import Medicines from "@/components/medicines";
 import Header from "@/components/ui/header";
+import Commitment from "@/components/commitment";
 
 export default function Home() {  
   const [medicinesClicked, setMedicinesClicked] = useState(false);
@@ -68,6 +69,7 @@ export default function Home() {
       <PageIllustration />
         <>
           <Hero />
+          <Commitment />
           <Workflows />
           <Features />
           <Testimonials />
