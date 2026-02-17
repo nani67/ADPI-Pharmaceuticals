@@ -36,9 +36,8 @@ export default function Contact() {
                   Head Office
                 </h3>
                 <p className="text-gray-300">
-                  123 Pharma Sector, <br />
-                  Industrial Area, <br />
-                  Lucknow, Uttar Pradesh, India - 226001
+                  ADPI Pharmaceuticals,<br />
+                 Jageswar Dham, Bithoor Road, Kanpur
                 </p>
               </div>
               <div>
@@ -46,9 +45,8 @@ export default function Contact() {
                   Contact Details
                 </h3>
                 <p className="text-gray-300">
-                  Phone: +91 98765 43210 <br />
-                  Email: info@adpopharma.com <br />
-                  Support: support@adpopharma.com
+                  Phone: +91 782786 05016, +91 94518 01066<br />
+                  Email: adpillp086@gmail.com<br />
                 </p>
               </div>
               <div>
