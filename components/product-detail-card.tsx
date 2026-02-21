@@ -41,9 +41,11 @@ const ProductDetailCard = ({ item, openModal }: ProductDetailCardProps) => {
             <h3 className="mb-2 text-xl font-bold text-gray-100 group-hover/card:text-teal-200 transition-colors">
               {item.name}
             </h3>
-            <p className="text-sm text-gray-400 flex-grow line-clamp-3 leading-relaxed">
-              {item.description}
-            </p>
+            {item.description && (
+              <p className="text-sm text-gray-400 flex-grow line-clamp-3 leading-relaxed">
+                {item.description}
+              </p>
+            )}
           </div>
 
           {/* Action */}
